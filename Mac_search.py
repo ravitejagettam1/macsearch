@@ -11,7 +11,7 @@ class Mac_address:
             self.key1="apiKey"
             self.url = "https://{}/{}?{}={}&output=json&search={}".format(self.address,self.api_version,self.key1,self.api_key,mac_address)
             self.get_mac_address()
-        Except:
+        except:
             print("Unable to connect to internet..")
     def get_api_key(self):
         key=self.decrypt("6jGBLJdqTxPz3612NUhBQa")
